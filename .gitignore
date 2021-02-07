@@ -1,2 +1,5 @@
 /Sound-Effects/Originals
 /Sound-Effects/Master_Project
+/build
+/dist
+*.spec
