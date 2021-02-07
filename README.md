@@ -1,5 +1,6 @@
 ## RE - Type Writer
 ---
+Re-create the experience of using the **'Resident Evil'** save room typewriter.
 ### Instructions
 1. Install necessary dependencies referenced in 'requirement.txt'.
     ```
