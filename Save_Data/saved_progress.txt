@@ -1,3 +1,9 @@
-Claire / 1 / 1st Floor - Dark Room
-Claire / 2 / Main Hall
-Claire / 3 / 1st Floor - Watchmen Quarters
+kiera / 01 / Lab - Security Room
+kiera / 02 / 1st Floor - Dark Room
+kiera / 03 / 2nd Floor - East W.Room
+kiera / 04 / 1st Floor - Dark Room
+kiera / 05 / 1st Floor - Watchmen Quarters
+kiera / 06 / Main Hall
+kiera / 07 / 2nd Floor - East W.Room
+kiera / 08 / Lab - Security Room
+kiera / 09 / 1st Floor - Watchmen Quarters
