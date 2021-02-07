@@ -6,8 +6,8 @@ import random
 import json
 import os
 
-space_soundeffect = "C:\Dev\Projects\RE-Typewriter\Sound-Effects\Typewriter_Space.mp3"
-char_soundeffect = "C:\Dev\Projects\RE-Typewriter\Sound-Effects\Typewriter_Character.mp3"
+space_soundeffect = "Sound-Effects\Typewriter_Space.mp3"
+char_soundeffect = "Sound-Effects\Typewriter_Character.mp3"
 save_file_path = "Save_Data/saved_progress.txt"
 save_theme = "Sound-Effects/secureplace.wav"
 
