@@ -7,3 +7,6 @@ kiera / 06 / Main Hall
 kiera / 07 / 2nd Floor - East W.Room
 kiera / 08 / Lab - Security Room
 kiera / 09 / 1st Floor - Watchmen Quarters
+kiera / 10 / 1st Floor - Watchmen Quarters
+kiera / 11 / 1st Floor - Dark Room
+kiera / 12 / 1st Floor - Watchmen Quarters

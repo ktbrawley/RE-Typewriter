@@ -9,9 +9,12 @@ import os
 space_soundeffect = "C:\Dev\Projects\RE-Typewriter\Sound-Effects\Typewriter_Space.mp3"
 char_soundeffect = "C:\Dev\Projects\RE-Typewriter\Sound-Effects\Typewriter_Character.mp3"
 save_file_path = "Save_Data/saved_progress.txt"
+save_theme = "Sound-Effects/secureplace.wav"
 
-mixer.pre_init(frequency=44100, size=-16, channels=2, buffer=512)
-mixer.init()
+
+def init():
+    mixer.pre_init(frequency=44100, size=-16, channels=2, buffer=512)
+    mixer.init()
 
 
 def play(sound, volume=0.4):
@@ -67,21 +70,37 @@ def saveProgress():
         print(char, sep="", end="", flush=True)
         time.sleep(.28)
 
+    # Mark end of saving progress
     play(space_soundeffect)
     writeSaveToFile(save_info)
-    input('Press any key to exit...\n')
+
+    exitProgram()
+
+
+def playSaveTheme(theme):
+    play(theme, volume=0.3)
+
+
+def exitProgram():
     mixer.fadeout(1000)
     time.sleep(1)
+    exit()
 
 
-def playSaveTheme():
-    save_theme = "Sound-Effects/secureplace.wav"
-    play(save_theme, volume=0.3)
-    # ===================================================
-    # MAIN
-    # ====================================================
+def askUserToSave():
+    user_choice = input(
+        'Would you like to save your progress? (y/n): ').lower()
+    if user_choice == 'y':
+        saveProgress()
+    elif user_choice == 'n':
+        exitProgram()
+    else:
+        askUserToSave()
 
 
-playSaveTheme()
-user_choice = input('Would you like to save your progress?')
-saveProgress()
+# ===================================================
+# MAIN
+# ====================================================
+init()
+playSaveTheme(save_theme)
+askUserToSave()
