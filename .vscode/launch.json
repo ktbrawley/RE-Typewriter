@@ -9,7 +9,8 @@
             "type": "python",
             "request": "launch",
             "program": "typewriter.py",
-            "console": "externalTerminal"
+            "console": "externalTerminal",
+            "pythonArgs": ["-O"]
         }
     ]
 }

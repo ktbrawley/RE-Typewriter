@@ -15,6 +15,7 @@ save_theme = "Sound-Effects/secureplace.wav"
 def init():
     mixer.pre_init(frequency=44100, size=-16, channels=2, buffer=512)
     mixer.init()
+    print()
 
 
 def play(sound, volume=0.4):
@@ -73,6 +74,11 @@ def saveProgress():
     # Mark end of saving progress
     play(space_soundeffect)
     writeSaveToFile(save_info)
+
+    if __debug__:
+        input('\nPress any key to return to the world of Survival Horror...')
+    else:
+        print()
 
     exitProgram()
 
