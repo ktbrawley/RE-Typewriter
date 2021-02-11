@@ -68,7 +68,7 @@ def saveProgress():
         else:
             play(char_soundeffect)
         print(char, sep="", end="", flush=True)
-        time.sleep(.28)
+        time.sleep(.2)
 
     # Mark end of saving progress
     play(space_soundeffect)
