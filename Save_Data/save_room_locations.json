@@ -1,17 +1,23 @@
 [
     {
-        "name": "Main Hall"
+        "name": "1st Floor - Main Hall"
     },
     {
-        "name": "2nd Floor - East W.Room"
+        "name": "1st Floor East - Watchmen Quarters"
     },
     {
-        "name": "1st Floor - Dark Room"
+        "name": "1st Floor West - Dark Room"
     },
     {
-        "name": "Lab - Security Room"
+        "name": "2nd Floor East - Waiting Room"
     },
     {
-        "name": "1st Floor - Watchmen Quarters"
+        "name": "2nd Floor East - Chief's Office"
+    },
+    {
+        "name": "Underground - Secret Room"
+    },
+    {
+        "name": "Underground - Operations Room"
     }
 ]
