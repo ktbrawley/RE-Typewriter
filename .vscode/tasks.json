@@ -6,7 +6,7 @@
         {
             "label": "build executable",
             "type": "shell",
-            "command": "pyinstaller --noconfirm --onedir --console --add-data '${cwd}/Save_Data;Save_Data/' --add-data '${cwd}/Sound-Effects;Sound-Effects/' --paths '${cwd}' ${cwd}/typewriter.py",
+            "command": "pyinstaller --noconfirm --onedir --console --add-data '${cwd}/Save_Data;Save_Data/' --add-data '${cwd}/Sound-Effects;Sound-Effects/' --paths '${cwd}' '${cwd}/typewriter.py'",
             "group": {
                 "kind": "build",
                 "isDefault": true
