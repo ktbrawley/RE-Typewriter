@@ -9,11 +9,12 @@ def init():
     print()
 
 
-def play(sound, volume=0.4):
+def play(sound, volume=0.4, loop=False):
     queuedSound = mixer.Sound(sound)
     channel = mixer.find_channel()
-    channel.set_volume(volume)
-    channel.play(queuedSound)
+    if channel:
+        channel.set_volume(volume)
+        channel.play(queuedSound, loops=-1 if loop else 0)
 
 
 def stop():
@@ -25,4 +26,4 @@ def fadeout():
 
 
 def playSaveTheme(theme=save_theme):
-    play(theme, volume=0.3)
+    play(theme, volume=0.3, loop=True)

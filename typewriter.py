@@ -33,7 +33,7 @@ def saveProgress():
     else:
         print()
 
-    exitProgram()
+    askUserToSave()
 
 
 def exitProgram():
